@@ -6,6 +6,7 @@ import java.util.Scanner;
 import entitites.Conta;
 import entitites.ContaEmpresarial;
 import entitites.ContaPoupanca;
+import entitites.ContaPoupancaPlus;
 
 public class Program {
 	public static void main(String[]args) {
@@ -110,6 +111,11 @@ public class Program {
 		System.out.println("Saldo da conta10: R$"+conta10.getSaldo());
 		System.out.println("conta09 - "+conta09);
 		System.out.println("conta10 - "+conta10);
+		
+		ContaPoupancaPlus contaPlus = new ContaPoupancaPlus(45900,"Claudia da Silva",1000.0,0.05);
+		contaPlus.saque(900);
+		System.out.println(contaPlus);
+		
 		
 		
 		

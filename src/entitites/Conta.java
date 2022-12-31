@@ -53,7 +53,7 @@ public class Conta {
 
 	@Override
 	public String toString() {
-		return "Dados da Conta [numeroDaConta=" + numeroDaConta + ", correntista=" + correntista + ", saldo=" +String.format("R$%.2f",saldo)+"]";
+		return "Dados da Conta [numeroDaConta=" + numeroDaConta + ", correntista=" + correntista + ", saldo=" +String.format("R$%.2f",this.getSaldo())+"]";
 	}
 	
 	

@@ -1,8 +1,10 @@
 package entitites;
 
 //final da frete da classe evita que a classe seja herdada e evita que o método seja sobreposto
-public final class ContaPoupanca extends Conta{
-	private Double taxaDePoupanca;
+//public final class ContaPoupanca extends Conta {
+public class ContaPoupanca extends Conta {
+	
+	protected Double taxaDePoupanca;
 
 public ContaPoupanca() {
 	super();
@@ -20,7 +22,7 @@ public void setTaxaDePoupanca(Double taxaDePoupanca) {
 	this.taxaDePoupanca=taxaDePoupanca;
 }
 
-public void saldoAtualizado() {
+public final void saldoAtualizado() {
 	saldo+=saldo*taxaDePoupanca;
 	//saldo=saldo+saldo*taxaDePoupanca;
 }

@@ -106,7 +106,10 @@ public class Program {
 		conta10.saldoAtualizado();
 		conta10.saque(1000);
 		
-		
+		System.out.println("A conta09 e conta10 tiveram o mesmo saldo inicial e o mesmo valor sacado.\n"
+				+ "Entranto tem um saldo final diferente, devido ao POLIMORFISMO. Apesar de ambas serem objetivos do tipo conta,\n"
+				+ "uma é foi instanciada como Conta Poupança onde o método sobrescrito tem saque não tem taxa e ainda tem os juros de poupança.");
+		System.out.println("No caso de um Upcasting a associação do tipo espefício com o tipo genérico é feito em tempo de execução.");
 		System.out.println("Saldo da conta09: R$"+conta09.getSaldo());
 		System.out.println("Saldo da conta10: R$"+conta10.getSaldo());
 		System.out.println("conta09 - "+conta09);
